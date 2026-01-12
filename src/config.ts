@@ -2,7 +2,7 @@ export const SITE = {
   website: "https://haibo.in.net/", // replace this with your deployed domain
   author: "haibo",
   profile: "https://haibo.in.net/",
-  desc: "不秃头程序员，假装喜欢读书，北漂选手，二胎爸爸.",
+  desc: "北漂选手，二胎宝爸，不秃头程序员，假装喜欢读书.",
   title: "海波在冲浪",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,

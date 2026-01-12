@@ -3,7 +3,7 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-新手爸爸，不秃头程序员，假装喜欢读书，北漂选手，二胎宝爸
+北漂选手，二胎宝爸，不秃头程序员，假装喜欢读书
 
 ## Project
 

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- 背景：简洁的米白色，更有纸张感 -->
+  <rect width="1200" height="630" fill="#FDFBF7"/>
+
+  <!-- 简笔画风格定义 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;700&amp;display=swap');
+    .sketch-line {
+      fill: none;
+      stroke: #4A4A4A;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .title { font-family: 'Noto Sans SC', sans-serif; font-size: 56px; font-weight: 700; fill: #333; }
+    .info { font-family: 'Noto Sans SC', sans-serif; font-size: 24px; fill: #666; }
+    .accent { stroke: #D97706; stroke-width: 2; opacity: 0.6; }
+  </style>
+
+  <!-- 装饰元素：极简年轮 -->
+  <g transform="translate(100, 100)" opacity="0.3">
+    <path d="M0,0 A40,40 0 1,1 0,0.1" class="sketch-line accent"/>
+    <path d="M-10,-10 A60,60 0 1,1 -10,-9.9" class="sketch-line accent"/>
+  </g>
+
+  <!-- 核心意象：老人的简笔画 -->
+  <g transform="translate(600, 300)">
+    <!-- 头部：简单的圆弧 -->
+    <path d="M-30,-80 Q0,-110 30,-80" class="sketch-line"/>
+    <!-- 脸部轮廓 -->
+    <path d="M-30,-80 Q-35,-40 0,-30 Q35,-40 30,-80" class="sketch-line"/>
+    <!-- 标志性的胡须/皱纹：简笔画的神韵 -->
+    <path d="M-15,-50 Q0,-40 15,-50" class="sketch-line" stroke-width="2"/>
+    <path d="M-20,-65 Q-10,-60 0,-65 Q10,-60 20,-65" class="sketch-line" stroke-width="1.5" opacity="0.5"/>
+
+    <!-- 身体：极简线条 -->
+    <path d="M0,-30 L0,100" class="sketch-line"/>
+    <path d="M0,0 Q-60,20 -40,80" class="sketch-line"/> <!-- 左臂/拐杖感 -->
+    <path d="M0,0 Q60,20 40,80" class="sketch-line"/>  <!-- 右臂 -->
+
+    <!-- 拐杖 -->
+    <path d="M-45,20 L-50,120" class="sketch-line" stroke="#8B4513"/>
+    <path d="M-60,20 Q-50,10 -40,20" class="sketch-line" stroke="#8B4513"/>
+  </g>
+
+  <!-- 文字内容：重新排版以适应简笔画风格 -->
+  <g transform="translate(200, 280)">
+    <text x="0" y="0" class="title">老人、老人</text>
+    <path d="M0,30 L280,30" class="sketch-line" stroke="#D97706" stroke-width="4" opacity="0.4"/>
+    <text x="0" y="80" class="info">作者：黑猫同学</text>
+    <text x="0" y="120" class="info">2020年1月3日</text>
+  </g>
+
+  <!-- 底部说明 -->
+  <g transform="translate(100, 580)">
+    <text x="0" y="0" class="info" style="font-size: 18px; opacity: 0.5;">
+      《我有九条尾》系列作品 · 岁月与时光
+    </text>
+  </g>
+
+  <!-- 装饰：飞鸟（简笔画经典元素） -->
+  <g transform="translate(900, 150)" opacity="0.4">
+    <path d="M0,0 Q10,-10 20,0 Q30,-10 40,0" class="sketch-line"/>
+    <path d="M50,20 Q60,10 70,20 Q80,10 90,20" class="sketch-line"/>
+    </g>
+    </svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&amp;display=swap');
+      .title { font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif; font-size: 64px; font-weight: 700; fill: white; }
+      .author { font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif; font-size: 32px; fill: rgba(255,255,255,0.8); }
+      .date { font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif; font-size: 28px; fill: rgba(255,255,255,0.7); }
+      .divider { stroke: rgba(255,255,255,0.3); stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- 装饰性元素：雨滴 -->
+  <g opacity="0.7">
+    <path d="M150,100 Q155,120 160,100 T170,100" stroke="rgba(255,255,255,0.4)" fill="none" stroke-width="2"/>
+    <path d="M250,80 Q255,100 260,80 T270,80" stroke="rgba(255,255,255,0.4)" fill="none" stroke-width="2"/>
+    <path d="M350,120 Q355,140 360,120 T370,120" stroke="rgba(255,255,255,0.4)" fill="none" stroke-width="2"/>
+    <path d="M950,150 Q955,170 960,150 T970,150" stroke="rgba(255,255,255,0.4)" fill="none" stroke-width="2"/>
+    <path d="M1050,200 Q1055,220 1060,200 T1070,200" stroke="rgba(255,255,255,0.4)" fill="none" stroke-width="2"/>
+    <path d="M850,250 Q855,270 860,250 T870,250" stroke="rgba(255,255,255,0.4)" fill="none" stroke-width="2"/>
+  </g>
+  
+  <!-- 柳叶刀形状 -->
+  <g transform="translate(900, 400)" opacity="0.3">
+    <path d="M0,0 L30,-50 L60,0 L30,50 Z" fill="rgba(255,255,255,0.2)" transform="rotate(30)"/>
+    <path d="M-100,50 L-70,0 L-40,50 L-70,100 Z" fill="rgba(255,255,255,0.2)" transform="rotate(-15)"/>
+  </g>
+  
+  <!-- 新生命象征：萌芽 -->
+  <g transform="translate(200, 400)" opacity="0.6">
+    <path d="M0,0 Q20,-30 40,0 Q20,30 0,0" fill="rgba(255,255,255,0.3)"/>
+    <path d="M40,0 Q60,-30 80,0 Q60,30 40,0" fill="rgba(255,255,255,0.3)"/>
+    <path d="M80,0 Q100,-30 120,0 Q100,30 80,0" fill="rgba(255,255,255,0.3)"/>
+  </g>
+  
+  <!-- 主要内容 -->
+  <g transform="translate(100, 250)">
+    <text x="500" y="0" text-anchor="middle" class="title">大雨、柳叶刀、新生命</text>
+    <line x1="200" y1="80" x2="800" y2="80" class="divider"/>
+    <text x="500" y="140" text-anchor="middle" class="author">作者：黑猫同学</text>
+    <text x="500" y="190" text-anchor="middle" class="date">2020年1月2日</text>
+  </g>
+  
+  <!-- 底部装饰 -->
+  <g transform="translate(100, 550)">
+    <line x1="0" y1="0" x2="1000" y2="0" class="divider"/>
+    <text x="500" y="30" text-anchor="middle" font-family="'Noto Sans SC', sans-serif" font-size="24" fill="rgba(255,255,255,0.6)">
+      《我有九条尾》系列作品 · 生命与希望
+    </text>
+  </g>
+</svg>

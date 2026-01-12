@@ -10,7 +10,9 @@ export interface Props extends CollectionEntry<"blog"> {
 
 const { variant = "h2", data, id, filePath } = Astro.props;
 
-const { title, description, pubDatetime, modDatetime, timezone } = data;
+const { title, description, pubDatetime, modDatetime, timezone, ogImage } = data;
+
+const imageUrl = ogImage;
 
 const headerProps = {
   style: { viewTransitionName: slugifyStr(title) },
@@ -18,19 +20,42 @@ const headerProps = {
 };
 ---
 
-<li class="my-6">
-  <a
-    href={getPath(id, filePath)}
-    class="inline-block text-lg font-medium text-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
-  >
-    {
-      variant === "h2" ? (
-        <h2 {...headerProps}>{title}</h2>
-      ) : (
-        <h3 {...headerProps}>{title}</h3>
-      )
-    }
-  </a>
-  <Datetime {pubDatetime} {modDatetime} {timezone} />
-  <p>{description}</p>
+<li class="my-6 flex gap-4">
+  {
+    imageUrl && (
+      <div class="flex-shrink-0">
+        <a
+          href={getPath(id, filePath)}
+          class="block"
+          aria-hidden="true"
+          tabindex="-1"
+        >
+          <img
+            src={imageUrl}
+            alt={title}
+            width="100"
+            height="100"
+            class="size-24 rounded-lg object-cover border border-muted"
+            loading="lazy"
+          />
+        </a>
+      </div>
+    )
+  }
+  <div class="flex-1 min-w-0">
+    <a
+      href={getPath(id, filePath)}
+      class="inline-block text-lg font-medium text-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
+    >
+      {
+        variant === "h2" ? (
+          <h2 {...headerProps}>{title}</h2>
+        ) : (
+          <h3 {...headerProps}>{title}</h3>
+        )
+      }
+    </a>
+    <Datetime {pubDatetime} {modDatetime} {timezone} />
+    <p class="mt-2 line-clamp-2">{description}</p>
+  </div>
 </li>
