@@ -150,7 +150,8 @@ const structuredData = {
   document.addEventListener('DOMContentLoaded', () => {
     const images = document.querySelectorAll('img[data-default-image]');
     images.forEach(img => {
-      img.onerror = function() {
+      const image = img as HTMLImageElement;
+      image.onerror = function() {
         this.onerror = null;
         if (this.dataset.defaultImage) {
           this.src = this.dataset.defaultImage;
@@ -162,8 +163,9 @@ const structuredData = {
   document.addEventListener('astro:page-load', () => {
     const images = document.querySelectorAll('img[data-default-image]');
     images.forEach(img => {
-      if (!img.onerror) {
-        img.onerror = function() {
+      const image = img as HTMLImageElement;
+      if (!image.onerror) {
+        image.onerror = function() {
           this.onerror = null;
           if (this.dataset.defaultImage) {
             this.src = this.dataset.defaultImage;
