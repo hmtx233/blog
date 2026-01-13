@@ -9,7 +9,8 @@ tags:
   - 我有九条尾
 description: "圆月越来越大，大到可以看到月球表面。坑坑
   洼洼的陨石坑，远远看去像是老人脸上的块块黑斑。起伏的山峦，则像老人眼角微笑时积起来的锋利皱纹。那是岁月的痕迹，也是老人的荣耀。"
-ogImage: /assets/blog/2020/01-older-and-older/cover.png
+ogImage: https://files.haibo.in.net/blog/older-and-older.png
+ogListImage: https://files.haibo.in.net/blog/older-and-older-list.png
 ---
 
 ### 老人、老人

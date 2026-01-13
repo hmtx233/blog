@@ -8,7 +8,8 @@ draft: false
 tags:
   - 我有九条尾
 description: "圆月吊到井口时像个圆娃娃慢慢映出小主人的模样白白的胖胖的可爱极了记得小主人出生"
-ogImage: /assets/blog/2020/01-rain-scalpel-new-life/cover.png
+ogImage: https://files.haibo.in.net/blog/rain-scalpel-new-life.png
+ogListImage: https://files.haibo.in.net/blog/rain-scalpel-new-life-list.png
 ---
 
 ### 大雨、柳叶刀、新生命

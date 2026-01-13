@@ -132,7 +132,7 @@ const structuredData = {
 
     <script is:inline src="/toggle-theme.js"></script>
   </head>
-  <body>
+   <body>
     <slot />
   </body>
 </html>
@@ -145,3 +145,31 @@ const structuredData = {
     height: 100%;
   }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('img[data-default-image]');
+    images.forEach(img => {
+      img.onerror = function() {
+        this.onerror = null;
+        if (this.dataset.defaultImage) {
+          this.src = this.dataset.defaultImage;
+        }
+      };
+    });
+  });
+
+  document.addEventListener('astro:page-load', () => {
+    const images = document.querySelectorAll('img[data-default-image]');
+    images.forEach(img => {
+      if (!img.onerror) {
+        img.onerror = function() {
+          this.onerror = null;
+          if (this.dataset.defaultImage) {
+            this.src = this.dataset.defaultImage;
+          }
+        };
+      }
+    });
+  });
+</script>

@@ -4,11 +4,12 @@ author: 黑猫同学
 pubDatetime: 2020-01-01T15:22:00Z
 slug: you-eyes-have-stars
 description: "我掉进了丛林深井，被捕器所伤，有血从前爪慢慢渗出。没觉得疼，只是凉凉的。像"
-ogImage: /assets/blog/2020/01-you-eyes-have-stars/cover.png
 featured: true
 draft: false
 tags:
   - 我有九条尾
+ogImage: https://files.haibo.in.net/blog/you-eyes-have-stars.png
+ogListImage: https://files.haibo.in.net/blog/you-eyes-have-stars-list.png
 ---
 
 ### 你眼里有星光

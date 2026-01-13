@@ -47,6 +47,27 @@ async function loadGoogleFonts(
       weight: 700,
       style: "bold",
     },
+    // 配置1：ZCOOL KuaiLe（站酷快乐体，推荐）
+        {
+          name: "ZCOOL KuaiLe",
+          font: "ZCOOL+KuaiLe",
+          weight: 400, // 卡通字体大多仅支持400权重
+          style: "normal",
+        },
+        // 配置2：Ma Shan Zheng（马善政，毛笔卡通风）
+        // {
+        //   name: "Ma Shan Zheng",
+        //   font: "Ma+Shan+Zheng",
+        //   weight: 400,
+        //   style: "normal",
+        // },
+        // 配置3：ZCOOL QingKe HuangYou（站酷庆科黄油体）
+        // {
+        //   name: "ZCOOL QingKe HuangYou",
+        //   font: "ZCOOL+QingKe+HuangYou",
+        //   weight: 400,
+        //   style: "normal",
+        // },
   ];
 
   const fonts = await Promise.all(

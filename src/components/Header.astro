@@ -39,19 +39,33 @@ const isActive = (path: string) => {
       id="top-nav-wrap"
       class="relative flex w-full items-baseline justify-between bg-background p-4 sm:items-center sm:py-6"
     >
-      <a
-        href="/"
-        class="flex items-center py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:my-auto sm:text-2xl sm:leading-none"
-      >
-        <img
-          src="https://files.haibo.in.net/blog/jelly.jpg"
-          width="30"
-          height="30"
-          style="border-radius:50%; object-fit:cover;margin-right: 5px;"
-          alt="海波在冲浪"
-        />
-        <span>{SITE.title}</span>
-      </a>
+      <div class="flex flex-col">
+        <a
+          href="/"
+          class="flex items-center py-1 sm:my-auto"
+        >
+          <img
+            src="https://files.haibo.in.net/blog/jelly.jpg"
+            width="30"
+            height="30"
+            style="border-radius:50%; object-fit:cover;margin-right: 6px;"
+            alt="海波在冲浪"
+          />
+          <span class="text-xl leading-8 font-semibold whitespace-nowrap sm:text-2xl sm:leading-none">
+            {SITE.title}
+          </span>
+        </a>
+        {SITE.externalLink && (
+          <a
+            href={SITE.externalLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-sm text-accent hover:underline"
+          >
+            {SITE.externalLink}
+          </a>
+        )}
+      </div>
       <nav
         id="nav-menu"
         class="flex w-full flex-col items-center sm:ms-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0"

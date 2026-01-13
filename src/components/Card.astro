@@ -10,9 +10,10 @@ export interface Props extends CollectionEntry<"blog"> {
 
 const { variant = "h2", data, id, filePath } = Astro.props;
 
-const { title, description, pubDatetime, modDatetime, timezone, ogImage } = data;
+const { title, description, pubDatetime, modDatetime, timezone, ogListImage } = data;
 
-const imageUrl = ogImage;
+const defaultImage = "/default-list.png";
+const imageUrl = ogListImage || defaultImage;
 
 const headerProps = {
   style: { viewTransitionName: slugifyStr(title) },
@@ -37,6 +38,7 @@ const headerProps = {
             height="100"
             class="size-24 rounded-lg object-cover border border-muted"
             loading="lazy"
+            data-default-image={defaultImage}
           />
         </a>
       </div>
